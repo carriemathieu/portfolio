@@ -39,7 +39,7 @@ html {
     font-family: 'Satisfy', cursive;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    font-size: clamp(28px, 4vw, 70px);
+    font-size: clamp(27.5px, 4vw, 70px);
 }
 
 #carrie-photo {
