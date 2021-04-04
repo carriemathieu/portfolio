@@ -19,9 +19,10 @@ html {
     background-color: rgb(246, 71, 71, .8);
     animation-duration: 1.5s;
     animation-name: slidein;
+    min-width: 200px;
 }
 
-#navbar-header {
+#content {
     font-family: 'Poiret One', cursive;
     text-align: center;
     height: auto;
@@ -29,14 +30,16 @@ html {
     white-space: nowrap;
     overflow: hidden;
     padding-bottom: 10px;
-    font-size: 2.1vw;
+    font-size: clamp(14px, 2vw, 30px);
+    
 }
 
 #navbar-header h1 {
-    font-size: 3.8vw;
+    /* font-size: 2.3em; */
     font-family: 'Satisfy', cursive;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    font-size: clamp(32px, 4vw, 70px);
 }
 
 #carrie-photo {
@@ -53,27 +56,42 @@ html {
     width: 100%;
     height: auto;
 }
+
+#confetti {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
 #confetti-btn {
     position: fixed;
-    bottom: 10%;
-    left: 50%;
+    display: block;
+    bottom: 5%;
     background-color: transparent;
     border-radius: 20%;
     font-family: 'Poiret One', cursive;
     border-style: solid;
-    color: rgb(246, 71, 71);
-    border-color: rgb(246, 71, 71, .8);
-    font-size: 2vw;
+    color: black;
+    border-color: black;
+    font-size: clamp(10px, 1.5vw, 17px);
 }
 
 #confetti-btn:hover{
-    background-color: rgb(246, 71, 71, .8);
+    border-color: white;
     color: white;
 }
 
 #confetti-btn:focus {
     outline: none;
+}
+
+footer {
+    position: absolute;
+    bottom: max(5px);
+    width: 100%;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    left: min(100px);
 }
 
 @keyframes slidein {
