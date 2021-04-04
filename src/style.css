@@ -5,3 +5,66 @@ html {
     background-size: cover;
     background-attachment: fixed;
 } 
+
+#navbar {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 1s;
+    background-color: rgb(246, 71, 71, .8);
+    animation-duration: 1.5s;
+    animation-name: slidein;
+}
+
+#navbar-header {
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    height: auto;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+#navbar-header h1 {
+    font-size: 3.8vw;
+    font-family: 'Satisfy', cursive;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#carrie-photo {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#carrie-photo img {
+    width: 100%;
+    height: auto;
+}
+  
+#confetti-btn {
+
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 0%;
+        width: 0%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 30%;
+    }
+}
