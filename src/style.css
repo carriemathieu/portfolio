@@ -4,10 +4,12 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    min-height: 700px;
 } 
 
 #navbar {
     height: 100%;
+    min-width: 200px;
     width: 30%;
     position: fixed;
     z-index: 1;
@@ -19,7 +21,6 @@ html {
     background-color: rgb(246, 71, 71, .8);
     animation-duration: 1.5s;
     animation-name: slidein;
-    min-width: 200px;
 }
 
 #content {
@@ -55,6 +56,18 @@ html {
 #carrie-photo img {
     width: 100%;
     height: auto;
+}
+
+#github:hover {
+    transform: rotate(20deg);
+}
+
+#linked-in:hover {
+    transform: rotate(20deg);
+}
+
+#mail:hover {
+    transform: rotate(20deg);
 }
 
 #confetti {
