@@ -101,7 +101,7 @@ footer {
 @keyframes slidein {
     from {
         margin-left: 0%;
-        width: 0%;
+        width: 40%;
     }
 
     to {
